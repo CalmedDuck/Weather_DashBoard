@@ -1,0 +1,19 @@
+:root {
+    --cornflower: #151B25;
+    --navyblue: #034687;
+    --babyblue: #DBE8E1;
+    --red: #E10032;
+  }
+  
+  header {
+    background-color: var(--navyblue);
+  }
+  
+  body {
+    background-color: var(--babyblue);
+  }
+  
+  #current-weather, #forecast {
+    background-color: var(--cornflower);
+    color: var(--babyblue);
+  }
