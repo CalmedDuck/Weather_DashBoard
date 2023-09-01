@@ -17,3 +17,8 @@
     background-color: var(--cornflower);
     color: var(--babyblue);
   }
+  
+  #search-history div {
+    background-color: var(--red);
+    color: var(--babyblue);
+  }
