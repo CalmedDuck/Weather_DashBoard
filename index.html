@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="text-white text-center text-2xl p-4">
+    Weather Dashboard
+  </header>
+
+  <form id="search-form" class="m-4">
+    <input type="text" id="city-input" placeholder="Enter city name" class="p-2 border rounded">
+    <button type="submit" class="p-2 rounded">Search</button>
+  </form>
+
+  <div id="search-history" class="m-4"></div>
+
+  <div id="current-weather" class="m-4 p-4 rounded">
+  
+  </div>
+  <div id="forecast" class="m-4 p-4 rounded">
+ 
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
