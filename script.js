@@ -7,7 +7,7 @@ var forecastDiv = document.getElementById("forecast");
 var searchHistory = JSON.parse(localStorage.getItem("searchHistory")) || [];
 
 function fetchCoordinates(cityName) {
-  fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}`)
     .then(response => response.json())
     .then(data => {
       var lat = data.coord.lat;
