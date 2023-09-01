@@ -61,3 +61,29 @@ function fetchWeatherData(lat, lon, cityName) {
       renderSearchHistory();
     }
   }
+
+  function renderSearchHistory() {
+    searchHistoryDiv.innerHTML = '';
+    searchHistory.forEach(function(city) {
+      var cityDiv = document.createElement('div');
+      cityDiv.textContent = city;
+      cityDiv.addEventListener('click', function() {
+        fetchCoordinates(city);
+      });
+      searchHistoryDiv.appendChild(cityDiv);
+    });
+  }
+  
+  searchForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+    var cityName = document.getElementById("city-input").value;
+    fetchCoordinates(cityName);
+  });
+  
+  renderSearchHistory();
+    
+    #search-history div {
+      background-color: var(--red);
+      color: var(--babyblue);
+    }
+  
